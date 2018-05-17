@@ -2,7 +2,12 @@
 class Result
 {
 public:
-	Result();
-	~Result();
+	int ResultNumber;
+
+	double BtValue;
+	double BtRoundedValue;
+
+	double PutValue;
+	double PutRoundedValue;
 };
 

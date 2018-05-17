@@ -2,7 +2,6 @@
 class EuropeanPut
 {
 public:
-	EuropeanPut();
-	~EuropeanPut();
+	double Calculate(double K, double S, double r, double t, double sigma);
 };
 
