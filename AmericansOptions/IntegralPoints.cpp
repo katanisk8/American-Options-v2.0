@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "IntegralPoints.h"
+#include "Math.h"
 
 
 
@@ -15,10 +16,10 @@ double IntegralPoints::CalculateIntegralPointD2(double d1, double sigma, double 
 
 double IntegralPoints::CalculateD1Numerator(double S, double B, double r, double sigma, double t)
 {
-	return Math.Log(S / B) + (r + (0.5 * Math.Pow(sigma, 2))) * t;
+	return Math::Log(S / B) + (r + (0.5 * Math::Pow(sigma, 2))) * t;
 }
 
 double IntegralPoints::CalculateD1Denominator(double sigma, double t)
 {
-	return sigma * Math.Sqrt(t);
+	return sigma * Math::Sqrt(t);
 }

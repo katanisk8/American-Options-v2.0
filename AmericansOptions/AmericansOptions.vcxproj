@@ -152,8 +152,8 @@
     <ClInclude Include="BtIntegralFunction.h" />
     <ClInclude Include="Calculator.h" />
     <ClInclude Include="EuropeanPut.h" />
-    <ClInclude Include="InputsValidator.h" />
     <ClInclude Include="IntegralPoints.h" />
+    <ClInclude Include="Math.h" />
     <ClInclude Include="PutIntegralFunction.h" />
     <ClInclude Include="Result.h" />
     <ClInclude Include="stdafx.h" />
@@ -166,10 +166,8 @@
     <ClCompile Include="BtIntegralFunction.cpp" />
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="EuropeanPut.cpp" />
-    <ClCompile Include="InputsValidator.cpp" />
     <ClCompile Include="IntegralPoints.cpp" />
     <ClCompile Include="PutIntegralFunction.cpp" />
-    <ClCompile Include="Result.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
