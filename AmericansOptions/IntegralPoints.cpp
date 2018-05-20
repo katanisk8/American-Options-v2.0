@@ -1,8 +1,5 @@
 #include "stdafx.h"
 #include "IntegralPoints.h"
-#include "Math.h"
-
-
 
 double IntegralPoints::CalculateIntegralPointD1(double S, double B, double r, double sigma, double t)
 {

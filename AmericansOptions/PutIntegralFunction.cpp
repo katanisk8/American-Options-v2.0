@@ -1,14 +1,12 @@
 #include "stdafx.h"
 #include "PutIntegralFunction.h"
 #include "IntegralPoints.h"
-#include "Math.h"
-
 
 double PutIntegralFunction::CalculateUnderIntegral(double r, double S, double K, double t, double ksi, double Btksi, double sigma)
 {
 	double integralPointD1 = IntegralPoints().CalculateIntegralPointD1(S, Btksi, r, sigma, t - ksi);
 	double integralPointD2 = IntegralPoints().CalculateIntegralPointD2(integralPointD1, sigma, t - ksi);
-	double distribution = Math::Density(-integralPointD2);
+	double distribution = Math::Cdf(-integralPointD2);
 
 	return r * K * Math::Exp(-r * (t - ksi)) * distribution;
 }

@@ -167,6 +167,7 @@
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="EuropeanPut.cpp" />
     <ClCompile Include="IntegralPoints.cpp" />
+    <ClCompile Include="Math.cpp" />
     <ClCompile Include="PutIntegralFunction.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

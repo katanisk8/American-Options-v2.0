@@ -2,7 +2,6 @@
 #include "BtCalculator.h"
 #include "BtIntegralFunction.h"
 #include "IntegralPoints.h"
-#include "Math.h"
 
 double BtCalculator::CalculateBtK_1(double sigma, double K, double dist, double d1, double r, double tau, double d2)
 {
@@ -27,7 +26,7 @@ double BtCalculator::CalculateBtK1(double r, double sigma, double t, double K, d
 {
 	double integralPointD1 = IntegralPoints().CalculateIntegralPointD1(K, K, r, sigma, t);
 	double integralPointD2 = IntegralPoints().CalculateIntegralPointD2(integralPointD1, sigma, t);
-	double distribution = Math::Density(integralPointD1);
+	double distribution = Math::Cdf(integralPointD1);
 
 	return CalculateBtK_1(sigma, K, distribution, integralPointD1, r, t, integralPointD2);
 }
@@ -36,7 +35,7 @@ double BtCalculator::CalculateBtK(double r, double sigma, double t, double K, do
 {
 	double integralPointD1 = IntegralPoints().CalculateIntegralPointD1(BtK_1, K, r, sigma, t);
 	double integralPointD2 = IntegralPoints().CalculateIntegralPointD2(integralPointD1, sigma, t);
-	double distribution = Math::Density(integralPointD1);
+	double distribution = Math::Cdf(integralPointD1);
 
 	return CalculateBt(sigma, K, distribution, integralPointD1, r, t, integralPointD2, n, T);
 }

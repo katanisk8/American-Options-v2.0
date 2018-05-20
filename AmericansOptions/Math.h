@@ -1,40 +1,17 @@
-#ifndef HEADER_H_MATH
-#define HEADER_H_MATH 
+#pragma once
 
 #include <cmath>
 #include <random>
 
 namespace Math
 {
-	double PI = 3.14159265358979323846;
+	static double PI = 3.14159265358979323846;
 
-	double Sqrt(double val)
-	{
-		return sqrt(val);
-	}
-
-	double Exp(double val)
-	{
-		return exp(val);
-	}
-
-	double Pow(double val, double exponent)
-	{
-		return pow(val, exponent);
-	}
-
-	double Log(double val)
-	{
-		return log(val);
-	}
-
-	double Density(double val)
-	{
-		std::default_random_engine generator;
-		std::normal_distribution<double> distribution(val);
-
-		return distribution(generator);
-	}
+	double Sqrt(double val);
+	double Exp(double val);
+	double Pow(double val, double exponent);
+	double Log(double val);
+	double Cdf(double val);
+	double Round(double val, int digits);
+	bool IsNaN(double val);
 }
-
-#endif HEADER_H_MATH

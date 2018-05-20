@@ -1,7 +1,5 @@
 #include "stdafx.h"
 #include "BtIntegralFunction.h"
-#include "Math.h"
-
 
 double BtIntegralFunction::CalculateUnderIntegral(double r, double sigma, double t, double ksi, double d2)
 {
